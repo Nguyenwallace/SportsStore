@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore.Tests\\SportsStore.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore.Tests\\SportsStore.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore.Tests\\SportsStore.Tests.csproj",
+        "projectName": "SportsStore.Tests",
+        "projectPath": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore.Tests\\SportsStore.Tests.csproj",
+        "packagesPath": "C:\\Users\\Tay\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj": {
+                "projectPath": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj",
+        "projectName": "SportsStore",
+        "projectPath": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj",
+        "packagesPath": "C:\\Users\\Tay\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
