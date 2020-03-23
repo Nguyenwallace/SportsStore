@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj": {}
+    "C:\\Users\\Tay\\Desktop\\SportsStore\\SportsStore\\SportsStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj": {
+    "C:\\Users\\Tay\\Desktop\\SportsStore\\SportsStore\\SportsStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj",
+        "projectUniqueName": "C:\\Users\\Tay\\Desktop\\SportsStore\\SportsStore\\SportsStore.csproj",
         "projectName": "SportsStore",
-        "projectPath": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\SportsStore.csproj",
+        "projectPath": "C:\\Users\\Tay\\Desktop\\SportsStore\\SportsStore\\SportsStore.csproj",
         "packagesPath": "C:\\Users\\Tay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tay\\Desktop\\Pro_ASP.NET_Core_MVC_2_Seventh_Edition_(2017)\\Practise\\SportsStore\\SportsStore\\obj\\",
+        "outputPath": "C:\\Users\\Tay\\Desktop\\SportsStore\\SportsStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tay\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [

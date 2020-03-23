@@ -36,6 +36,10 @@ namespace SportsStore.Infrastructure
         public PagingInfo PageModel { get; set; }
         public int TestModel { get; set; }
         public string PageAction { get; set; }
+
+        [HtmlAttributeName(DictionaryAttributePrefix = "page-url-")]
+         public Dictionary<string, object> PageUrlValues { get; set; }
+        = new Dictionary<string, object>();
         public bool PageClassesEnabled { get; set; } = false;
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
@@ -48,6 +52,8 @@ namespace SportsStore.Infrastructure
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder tag = new TagBuilder("a");
+                PageUrlValues["productPage"] = i;
+
                 //public virtual string Action (string actionName, object routeValues);
                 //actionName
                 //String
@@ -57,8 +63,10 @@ namespace SportsStore.Infrastructure
                 //An object that contains the parameters for a route. The parameters are retrieved 
                 //through reflection by examining the properties of the object.The object is typically 
                 //created by using object initializer syntax.
-               tag.Attributes["href"] = urlHelper.Action(PageAction,
-                new { productPage = i });
+                tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
+                //removed and replaced by above
+                //tag.Attributes["href"] = urlHelper.Action(PageAction, new { productPage = i });
+
                 if (PageClassesEnabled)
                 {
                     tag.AddCssClass(PageClass);

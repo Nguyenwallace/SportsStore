@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SportsStore.Models;
@@ -31,6 +32,9 @@ namespace SportsStore
                     options.UseSqlServer(Configuration.GetConnectionString("SportsStore")));
 
             services.AddTransient<IProductRepository, EFProductRepository>();
+            //Add for Cart
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +52,8 @@ namespace SportsStore
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            //Add for Cart
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();
@@ -74,6 +79,17 @@ namespace SportsStore
 
                 endpoints.MapControllerRoute(
                     name: null,
+                    pattern: "{category}",
+                    defaults: new
+                    {
+                        controller = "Product",
+                        action = "List",
+                        productPage = 1
+                    }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: null,
                     pattern: "",
                     defaults: new
                     {
@@ -82,15 +98,17 @@ namespace SportsStore
                         productPage = 1
                     });
 
-                //improve URLs 
-                endpoints.MapControllerRoute(
-                    name: "pagination",
-                    pattern: "Products/Page{productPage}",
-                    defaults: new { Controller = "Product", action = "List" });
-                //Origin Code
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Product}/{action=List}/{id?}");
+                endpoints.MapControllerRoute(name: null, pattern: "{controller}/{action}/{id?}");
+
+                ////improve URLs 
+                //endpoints.MapControllerRoute(
+                //    name: "pagination",
+                //    pattern: "Products/Page{productPage}",
+                //    defaults: new { Controller = "Product", action = "List" });
+                ////Origin Code
+                //endpoints.MapControllerRoute(
+                //    name: "default",
+                //    pattern: "{controller=Product}/{action=List}/{id?}");
             });
            
         }
