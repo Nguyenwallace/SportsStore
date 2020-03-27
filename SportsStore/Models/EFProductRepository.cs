@@ -14,5 +14,6 @@ namespace SportsStore.Models
         }
 
         public IQueryable<Product> Products => context.Products;
+       
     }
 }

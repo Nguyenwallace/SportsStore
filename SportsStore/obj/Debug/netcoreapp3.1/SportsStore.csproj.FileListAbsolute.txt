@@ -209,5 +209,8 @@ C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\ru\Microsof
 C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\SportsStore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CartSummary\Default.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Order\CheckOut.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\SportsStore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Order\Completed.cshtml.g.cs
