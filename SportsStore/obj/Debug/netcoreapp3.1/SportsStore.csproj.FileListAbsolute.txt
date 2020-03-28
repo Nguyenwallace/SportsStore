@@ -212,5 +212,14 @@ C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\zh-Hant\Mic
 C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
 C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CartSummary\Default.cshtml.g.cs
 C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Order\CheckOut.cshtml.g.cs
-C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\SportsStore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Order\Completed.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Order\List.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Administration\Index.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Administration\Edit.cshtml.g.cs
+C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\SportsStore.MvcApplicationPartsAssemblyInfo.cache

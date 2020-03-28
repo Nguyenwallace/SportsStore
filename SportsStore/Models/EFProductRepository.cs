@@ -14,6 +14,37 @@ namespace SportsStore.Models
         }
 
         public IQueryable<Product> Products => context.Products;
-       
+
+        public void SaveProduct(Product prod)
+        {
+            if(prod.ProductID == 0) {
+                context.Products.Add(prod);
+            } else
+            {
+                Product dbEntry = context.Products
+                .FirstOrDefault(p => p.ProductID == prod.ProductID);
+                if (dbEntry != null)
+                {
+                    dbEntry.Name = prod.Name;
+                    dbEntry.Description = prod.Description;
+                    dbEntry.Price = prod.Price;
+                    dbEntry.Category = prod.Category;
+                }
+            }
+            context.SaveChanges();
+        }
+
+        public Product DeleteProduct(int productID)
+        {
+            Product dbEntry = context.Products
+            .FirstOrDefault(p => p.ProductID == productID);
+            if (dbEntry != null)
+            {
+                context.Products.Remove(dbEntry);
+                context.SaveChanges();
+            }
+            return dbEntry;
+        }
+
     }
 }

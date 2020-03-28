@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using SportsStore.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 
 namespace SportsStore
 {
@@ -31,6 +32,14 @@ namespace SportsStore
             
             services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SportsStore")));
+
+            //New added for Authentication & Authorization
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SportsStoreIdentity")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddTransient<IOrderRepository, EFOrderRepository>();
@@ -61,8 +70,10 @@ namespace SportsStore
             app.UseSession();
             app.UseRouting();
 
+            //Authentiation & Authorization
+            app.UseAuthentication();
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
