@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 //this injection create scope
 using Microsoft.Extensions.DependencyInjection;
@@ -18,9 +19,14 @@ namespace SportsStore
         {
             var host= CreateHostBuilder(args).Build();
             var scope = host.Services.CreateScope();
+            
             //Get Application Data
             var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
             SeedData.EnsurePopulated(dbContext);
+
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+            IdentitySeedData.EnsurePopulated(userManager);
+
             host.Run();
            
         }

@@ -223,3 +223,4 @@ C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.A
 C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Tay\Desktop\SportsStore\SportsStore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\SportsStore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tay\Desktop\SportsStore\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

@@ -33,10 +33,11 @@ namespace SportsStore
             services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SportsStore")));
 
-            //New added for Authentication & Authorization
+            //New added for Authentication & Authorization Database
             services.AddDbContext<AppIdentityDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SportsStoreIdentity")));
 
+            //New added for Authentication & Authorization purpose
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDbContext>()
                 .AddDefaultTokenProviders();
@@ -126,7 +127,10 @@ namespace SportsStore
                 //    name: "default",
                 //    pattern: "{controller=Product}/{action=List}/{id?}");
             });
-           
+
+            //Seeding for Authentication
+            
+
         }
     }
 }
